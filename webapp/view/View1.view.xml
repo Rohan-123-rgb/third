@@ -1,0 +1,84 @@
+<mvc:View controllerName="classes.assingment4.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						 <Table id="idProductsTable"	items="{/ProductCollection}">
+
+	<columns >
+
+		<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%" class="yellow">
+
+			<Text text="ProductId"></Text>
+
+		</Column>
+
+			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%" class="green">
+
+			<Text text="Category"></Text>
+
+		</Column>
+
+		
+
+		
+
+		<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+
+			<Text text="WeightMeasure"></Text>
+
+		</Column>
+
+		
+
+		
+
+			<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+
+			<Text text="Status"></Text>
+
+		</Column>
+
+	
+
+		</columns>
+
+	<items>
+
+		<ColumnListItem vAlign="Middle">
+
+			
+
+			<cells>
+
+				<Text wrapping="true" text="{ProductId}"></Text>
+
+					<Text wrapping="true" text="{Category}"></Text>
+					<Text wrapping="true" text="{path:'WeightMeasure' , formatter:'.formatter.Weight'}"></Text>
+
+							<Text wrapping="true" text="{path: 'Status' , formatter:'.formatter.Status'}"></Text>
+
+
+
+
+				
+			</cells>
+
+		</ColumnListItem>
+
+	</items>
+
+</Table>
+
+					   
+
+					   
+
+					   
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
